@@ -1,0 +1,266 @@
+/* Generated from identity/tokens.tokens.json by `python -m lab.identity build`. Do not edit. */
+
+@font-face {
+  font-family: "Archivo Black";
+  src: url("../fonts/ArchivoBlack-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins Tabular";
+  src: url("../fonts/PoppinsTabular-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins Tabular";
+  src: url("../fonts/PoppinsTabular-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  color-scheme: light;
+  --color-palette-ink: #07090C;
+  --color-palette-panel: #0C1421;
+  --color-palette-paper: #F3F1EC;
+  --color-palette-paper-2: #EEEBE4;
+  --color-palette-blue: #2B6BFF;
+  --color-palette-blue-deep: #1F4FD8;
+  --color-palette-blue-light: #6E9BFF;
+  --color-palette-amber: #D9923A;
+  --color-palette-white: #FFFFFF;
+  --color-palette-grey-900: #2A3342;
+  --color-palette-grey-700: #3B4250;
+  --color-palette-grey-600: #4A5463;
+  --color-palette-grey-500: #6B7280;
+  --color-palette-grey-300: #A7B0BD;
+  --color-palette-grey-200: #C9D0DA;
+  --color-palette-rule-light: #DAD6CC;
+  --color-palette-green: #2FBF7A;
+  --color-palette-green-deep: #157347;
+  --color-palette-amber-deep: #A35C00;
+  --color-palette-red: #F07167;
+  --color-palette-red-deep: #C2261D;
+  --color-palette-blue-100: #D6E2FF;
+  --color-palette-blue-200: #A9C3FF;
+  --font-family-display: "Archivo Black", sans-serif;
+  --font-family-body: "Poppins", sans-serif;
+  --font-family-numeric: "Poppins Tabular", sans-serif;
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-size-xs: 12px;
+  --font-size-sm: 14px;
+  --font-size-base: 16px;
+  --font-size-lg: 20px;
+  --font-size-xl: 25px;
+  --font-size-2xl: 31px;
+  --font-size-3xl: 39px;
+  --font-size-4xl: 49px;
+  --line-height-body: 1.5;
+  --line-height-heading: 1.1;
+  --space-0: 0px;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+  --space-9: 96px;
+  --space-10: 128px;
+  --radius-sm: 2px;
+  --radius-md: 6px;
+  --radius-lg: 12px;
+  --radius-pill: 999px;
+  --layout-content: 1024px;
+  --layout-card: 224px;
+  --layout-label: 128px;
+  --stroke-thin: 1px;
+  --chart-bar-thickness: 12px;
+  --chart-bar-radius: var(--radius-sm);
+  --chart-chip-radius: var(--radius-pill);
+  --chart-chip-padding-x: var(--space-3);
+  --chart-chip-padding-y: var(--space-1);
+  --chart-grade-c-fill: var(--color-palette-amber);
+  --chart-grade-c-text: var(--color-palette-ink);
+  --chart-categorical-1: var(--color-palette-blue);
+  --chart-categorical-2: var(--color-palette-amber);
+  --chart-categorical-3: var(--color-palette-blue-light);
+  --chart-categorical-4: var(--color-palette-grey-500);
+  --chart-categorical-5: var(--color-palette-green);
+  --chart-categorical-6: var(--color-palette-red);
+  --chart-sequential-1: var(--color-palette-blue-100);
+  --chart-sequential-2: var(--color-palette-blue-200);
+  --chart-sequential-3: var(--color-palette-blue-light);
+  --chart-sequential-4: var(--color-palette-blue);
+  --chart-sequential-5: var(--color-palette-blue-deep);
+  --map-sea: var(--color-palette-ink);
+  --map-land: var(--color-palette-grey-900);
+  --map-coast: var(--color-palette-grey-700);
+  --map-sensitive-fill: var(--color-palette-amber);
+  --map-sensitive-opacity: 0.25;
+  --map-sensitive-line: var(--color-palette-amber);
+  --map-route: var(--color-palette-blue);
+  --map-route-width: 2px;
+  --map-port: var(--color-palette-paper);
+  --map-label: var(--color-palette-paper);
+  --color-surface: var(--color-palette-paper);
+  --color-surface-raised: var(--color-palette-white);
+  --color-text: var(--color-palette-ink);
+  --color-text-muted: var(--color-palette-grey-600);
+  --color-rule: var(--color-palette-rule-light);
+  --color-accent: var(--color-palette-blue);
+  --color-accent-text: var(--color-palette-blue-deep);
+  --color-on-accent: var(--color-palette-white);
+  --color-on-status: var(--color-palette-white);
+  --color-good: var(--color-palette-green-deep);
+  --color-warning: var(--color-palette-amber-deep);
+  --color-critical: var(--color-palette-red-deep);
+}
+
+[data-theme="light"] {
+  color-scheme: light;
+  --color-surface: var(--color-palette-paper);
+  --color-surface-raised: var(--color-palette-white);
+  --color-text: var(--color-palette-ink);
+  --color-text-muted: var(--color-palette-grey-600);
+  --color-rule: var(--color-palette-rule-light);
+  --color-accent: var(--color-palette-blue);
+  --color-accent-text: var(--color-palette-blue-deep);
+  --color-on-accent: var(--color-palette-white);
+  --color-on-status: var(--color-palette-white);
+  --color-good: var(--color-palette-green-deep);
+  --color-warning: var(--color-palette-amber-deep);
+  --color-critical: var(--color-palette-red-deep);
+}
+
+[data-theme="dark"] {
+  color-scheme: dark;
+  --color-surface: var(--color-palette-ink);
+  --color-surface-raised: var(--color-palette-panel);
+  --color-text: var(--color-palette-paper);
+  --color-text-muted: var(--color-palette-grey-300);
+  --color-rule: var(--color-palette-grey-900);
+  --color-accent: var(--color-palette-blue);
+  --color-accent-text: var(--color-palette-blue-light);
+  --color-on-accent: var(--color-palette-white);
+  --color-on-status: var(--color-palette-ink);
+  --color-good: var(--color-palette-green);
+  --color-warning: var(--color-palette-amber);
+  --color-critical: var(--color-palette-red);
+}
+
+/* Properties that read a role: declared in every theme scope, so they re-resolve. */
+:root, [data-theme="light"], [data-theme="dark"] {
+  --chart-bar-track: var(--color-rule);
+  --chart-bar-fill: var(--color-accent);
+  --chart-chip-fill: var(--color-surface-raised);
+  --chart-chip-text: var(--color-text);
+  --chart-chip-invasive-fill: var(--color-good);
+  --chart-chip-invasive-text: var(--color-on-status);
+  --chart-chip-pollution-fill: var(--color-critical);
+  --chart-chip-pollution-text: var(--color-on-status);
+  --chart-chip-accident-fill: var(--color-warning);
+  --chart-chip-accident-text: var(--color-on-status);
+  --chart-chip-status-in-progress-fill: var(--color-accent-text);
+  --chart-chip-status-in-progress-text: var(--color-on-status);
+  --chart-chip-status-to-decide-fill: var(--color-warning);
+  --chart-chip-status-to-decide-text: var(--color-on-status);
+  --chart-chip-status-planned-fill: var(--color-surface-raised);
+  --chart-chip-status-planned-text: var(--color-text);
+  --chart-grade-a-plus-fill: var(--color-accent);
+  --chart-grade-a-plus-text: var(--color-on-accent);
+  --chart-grade-a-fill: var(--color-accent);
+  --chart-grade-a-text: var(--color-on-accent);
+  --chart-grade-b-fill: var(--color-accent-text);
+  --chart-grade-b-text: var(--color-on-status);
+  --chart-grade-d-fill: var(--color-critical);
+  --chart-grade-d-text: var(--color-on-status);
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family-body);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-body);
+}
+
+body, [data-theme] {
+  color: var(--color-text);
+  background: var(--color-surface);
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-family-display);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-heading);
+}
+
+/* Figures line up: every digit of Poppins Tabular shares one advance. */
+.figures {
+  font-family: var(--font-family-numeric);
+}
+
+.eyebrow {
+  font-family: var(--font-family-body);
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-xs);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-accent-text);
+}
+
+/* The wordmark as live text; the outlined SVGs sit beside this file. */
+.wordmark {
+  font-family: var(--font-family-body);
+  font-weight: var(--font-weight-light);
+  white-space: nowrap;
+}
+.wordmark strong {
+  font-family: var(--font-family-display);
+  font-weight: var(--font-weight-regular);
+}
